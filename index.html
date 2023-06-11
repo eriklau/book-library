@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <h1>BOOK LIBRARY</h1>
+
+        <div class="input-bars">
+            <div class="book-name">
+                <h3>Book</h3>
+                <input id="book-input" type="search">
+            </div>
+            
+            <div class="author-name">
+                <h3>Author</h3>
+                <input id="author-input" type="search">
+            </div>
+
+            <div class="status-bar">
+                <h3>Status</h3>
+                <select id="status-input" name="status" id="status">
+                    <option id="read" value="read">Read</option>
+                    <option id="not-read" value="not-read">Not Read</option>
+                </select>
+            </div>
+        </div>
+        <button class="add-book-btn" id="add-book-btn">Add Book</button>
+
+        <div class="main-list">
+            <table id="book-table">
+                <tr>
+                  <th>Book Name</th>
+                  <th>Author</th>
+                  <th>Status</th>
+                  <th>Remove Book</th>
+                </tr>
+                <tr>
+                  <td>The Lord of the Rings</td>
+                  <td>J.R.R. Tolkien</td>
+                  <td><button class="read-unread-btn" id="read-unread-btn">READ</td>
+                  <td><button class="remove-btn" id="remove-btn">REMOVE</td>
+                </tr>
+                <tr>
+                  <td>1984</td>
+                  <td>George Orwell</td>
+                  <td><button class="read-unread-btn" id="read-unread-btn">NOT-READ</td>
+                  <td><button class="remove-btn" id="remove-btn">REMOVE</td>
+                </tr>
+
+              </table>
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
